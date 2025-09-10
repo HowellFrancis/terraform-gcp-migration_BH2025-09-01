@@ -1,0 +1,5 @@
+[
+  { "name": "sku_id", "type": "STRING", "mode": "REQUIRED" },
+  { "name": "quantity", "type": "INTEGER", "mode": "NULLABLE" },
+  { "name": "last_updated", "type": "TIMESTAMP", "mode": "REQUIRED" }
+]
