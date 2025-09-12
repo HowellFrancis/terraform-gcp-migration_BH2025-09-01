@@ -21,24 +21,6 @@ Start: Terraform, Legacy PostgreSQL (on-prem)
 - Cloud SQL (operational reads)  
 - Alteryx validation layer (incl. CI gate)  
 
-flowchart LR
-  PG[Legacy PostgreSQL]
-  DF[Cloud Dataflow (batch)]
-  PS[Pub/Sub (deltas)]
-  BQ[BigQuery - inventory_analytics_prod]
-  CS[Cloud SQL - operational]
-  AZ[Alteryx Validation]
-  MON[Monitoring / Exec Dashboard]
-
-  PG --> DF
-  DF --> BQ
-  PG --> PS
-  PS --> BQ
-  BQ --> AZ
-  PG --> AZ
-  AZ --> MON
-  BQ --> CS
-
 ## What to open first 
 1. **README.md** (this file) — TL;DR + technical summary  
 2. **docs/runbook.md** — cutover playbook, rollback steps  
