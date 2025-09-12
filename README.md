@@ -21,17 +21,6 @@ Start: Terraform, Legacy PostgreSQL (on-prem)
 - Cloud SQL (operational reads)  
 - Alteryx validation layer (incl. CI gate)  
 
-### ASCII diagram
-[Legacy Postgres] --(batch export)--> [Cloud Dataflow] --> [BigQuery: bh_mart.inventory_master]
-\ ^
---(Pub/Sub deltas)----------/
-|
-[Alteryx]
-|
-[Validation Reports -> Exec Dashboards]
-
-### Mermaid diagram 
-```mermaid
 flowchart LR
   PG[Legacy PostgreSQL]
   DF[Cloud Dataflow (batch)]
