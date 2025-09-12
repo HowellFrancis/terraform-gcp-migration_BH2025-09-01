@@ -1,8 +1,8 @@
 ### terraform-gcp-migration_BH2025-09-01
-###Enterprise Terraform → GCP Migration (BrewHaul Contract Engagement 2025-09-01)
-###Zero-downtime inventory analytics migration, with: (a) automated Alteryx validation, and (b) CI-gated parity checks.
+### Enterprise Terraform → GCP Migration (BrewHaul Contract Engagement 2025-09-01)
+### Zero-downtime inventory analytics migration, with: (a) automated Alteryx validation, and (b) CI-gated parity checks.
 ---
-### TL;DR — Executive summary
+### Executive summary
 **Problem:** Migrate 1.2M+ inventory records from legacy Terraform-managed PostgreSQL to Google Cloud Platform with zero downtime and complete data integrity assurance.  
 **Solution:** Parallel GCP deployment (Terraform Cloud), incremental batch + Pub/Sub delta capture, and a CI-gated automated validation layer (Alteryx + Python validator).  
 **Impact:** 0 hours downtime, 100% data integrity, 35% infrastructure cost reduction, 3.2× analytics performance improvement.
